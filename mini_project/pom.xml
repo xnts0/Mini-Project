@@ -28,7 +28,7 @@
         <dependency>
             <groupId>me.vacuity.ai.sdk</groupId>
             <artifactId>ai-java-sdk</artifactId>
-            <version>${version}</version>       
+            <version>1.7.10</version>       
         </dependency>
     </dependencies>
     <build>
