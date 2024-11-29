@@ -20,6 +20,16 @@
             <artifactId>javafx-fxml</artifactId>
             <version>13</version>
         </dependency>
+        <dependency>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambots-longpolling</artifactId>
+            <version>7.10.0</version>
+        </dependency>
+        <dependency>
+            <groupId>me.vacuity.ai.sdk</groupId>
+            <artifactId>ai-java-sdk</artifactId>
+            <version>${version}</version>       
+        </dependency>
     </dependencies>
     <build>
         <plugins>
