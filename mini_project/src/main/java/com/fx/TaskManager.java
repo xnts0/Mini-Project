@@ -27,7 +27,7 @@ public class TaskManager extends Task {
     @Override
     public void updateTask(int index, String newName) {
         if (index >= 0 && index < tasks.size()) {
-            Taskt= tasks.get(index); t.setName(newName);
+            Task t= tasks.get(index); t.setName(newName);
         }
 
 
