@@ -39,9 +39,7 @@ public class Controller {
     // I am Manaf I will do This Method
     @FXML
     public void onUpdateTaskClick() {
-        <@1148092566651285584>
-
-                TextInputDialog dialog = new TextInputDialog();
+     TextInputDialog dialog = new TextInputDialog();
         dialog.setTitle("Update Task");
         dialog.setHeaderText("Enter the new task name:");
         dialog.setContentText("New Name:");
