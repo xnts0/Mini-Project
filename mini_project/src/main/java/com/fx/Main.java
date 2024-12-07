@@ -1,6 +1,6 @@
 package com.fx;
-
-
+//Faisal Hassan Ahmed Sumayli
+//craete main class 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

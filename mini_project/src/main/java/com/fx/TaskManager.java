@@ -1,7 +1,8 @@
 package com.fx;
 
 import java.util.ArrayList;
-
+//Faisal Hassan Ahmed Sumayli
+//create constructor and get task method
 public class TaskManager extends Task {
         private ArrayList<Task> tasks;
 
