@@ -20,7 +20,7 @@ public class TaskManager extends Task {
     // I'm Saleh ill do remove task
     @Override
     public void removeTask(Task task) {
-
+        tasks.remove(task); 
     }
 
     //Im Manaf Hamadi i wiil do update task

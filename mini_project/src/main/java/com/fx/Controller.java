@@ -30,4 +30,9 @@ public class Controller {
 
     } 
     
+    // I'm Saleh ill do this method
+    @FXML
+    public void onRemoveTaskClick() {
+    
+    }
 }
