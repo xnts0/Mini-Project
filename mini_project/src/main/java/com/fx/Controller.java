@@ -35,4 +35,10 @@ public class Controller {
     public void onRemoveTaskClick() {
     
     }
+
+    // I am Manaf I will do This Method
+    @FXML
+    public void onUpdateTaskClick() {
+
+    }
 }

@@ -26,7 +26,11 @@ public class TaskManager extends Task {
     //Im Manaf Hamadi i wiil do update task
     @Override
     public void updateTask(int index, String newName) {
-        
+        if (index >= 0 && index < tasks.size()) {
+            Taskt= tasks.get(index); t.setName(newName);
+        }
+
+
     }
     
     public ArrayList<Task> getTasks() {
