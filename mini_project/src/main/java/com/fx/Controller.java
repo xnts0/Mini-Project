@@ -26,6 +26,27 @@ public class Controller {
     // I'm Abdullah I will do this method
     @FXML
     public void onAddTaskClick() {
+        TextInputDialog dialog = new TextInputDialog();
+        dialog.setTitle("Add Task");
+        dialog.setHeaderText("Enter the task name:");
+        dialog.setContentText("Name:");
+
+        Optional<String> result = dialog.showAndWait();
+        if (result.isPresent()) {
+            String taskName = result.get();
+            // Create a new TaskManager representing a single (leaf) task
+            TaskManager newTask = new TaskManager(taskName, false);
+            rootManager.addTask(newTask);
+
+            CheckBox cb = new CheckBox(taskName);
+            cb.setUserData(newTask);
+            // Update isDone when checkbox toggled
+            cb.selectedProperty().addListener((obs, oldVal, newVal) -> {
+                ((TaskManager)cb.getUserData()).setDone(newVal);
+            });
+
+            taskList.getChildren().add(cb);
+        }
 
 
     } 
