@@ -27,4 +27,8 @@ public class TaskManager extends Task {
     public void updateTask(int index, String newName) {
         
     }
+    
+    public ArrayList<Task> getTasks() {
+        return tasks;
+    }
 }
