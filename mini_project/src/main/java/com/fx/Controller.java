@@ -33,7 +33,14 @@ public class Controller {
     // I'm Saleh ill do this method
     @FXML
     public void onRemoveTaskClick() {
-    
+        for (int i = taskList.getChildren().size() - 1; i >= 0; i--) {
+            CheckBox cb = (CheckBox) taskList.getChildren().get(i);
+            if (cb.isSelected()) {
+                Task taskToRemove = rootManager.getTasks().get(i);
+                rootManager.removeTask(taskToRemove);
+                taskList.getChildren().remove(i);
+            }
+        }
     }
 
     // I am Manaf I will do This Method
