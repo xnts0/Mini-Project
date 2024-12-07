@@ -23,4 +23,11 @@ public class Controller {
     public void initialize() {
         rootManager = new TaskManager("Root", false);
     }
+    // I'm Abdullah I will do this method
+    @FXML
+    public void onAddTaskClick() {
+
+
+    } 
+    
 }

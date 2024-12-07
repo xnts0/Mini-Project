@@ -14,6 +14,7 @@ public class TaskManager extends Task {
     // Im Abdullah I will do add task
     @Override
     public void addTask(Task task){
+        tasks.add(task); 
 
     }
     // I'm Saleh ill do remove task
