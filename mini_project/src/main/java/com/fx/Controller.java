@@ -39,6 +39,26 @@ public class Controller {
     // I am Manaf I will do This Method
     @FXML
     public void onUpdateTaskClick() {
+        <@1148092566651285584>
+
+                TextInputDialog dialog = new TextInputDialog();
+        dialog.setTitle("Update Task");
+        dialog.setHeaderText("Enter the new task name:");
+        dialog.setContentText("New Name:");
+
+        Optional<String> newNameResult = dialog.showAndWait();
+        if (newNameResult.isPresent()) {
+            String newName = newNameResult.get();
+
+            for (int i = 0; i < taskList.getChildren().size(); i++) {
+                CheckBox cb = (CheckBox) taskList.getChildren().get(i);
+                if (cb.isSelected()) {
+                    rootManager.updateTask(i, newName);
+                    cb.setText(newName);
+                    cb.setSelected(false);
+                }
+            }
+        }
 
     }
-}
+
